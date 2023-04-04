@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    background-color: #363B59;
+}
+
+.contenedor2{
+
+    padding: 50px;
+
+}
+
+.contenedor3{
+
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+
+
+}
+
+#location{
+
+    font-size: 24px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+
+}
+
+#description{
+
+    font-size: 18px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+#humidity{
+
+    font-size: 18px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+
+}
+
+#pressrure{
+
+    font-size: 18px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+
+}
+#temperature{
+
+    font-size: 54px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+
+}
+#temperature2{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: -150px;
+    font-size: 18px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+
+
+}
+#date{
+
+    font-size: 18px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color: #F2F2F2;
+
+}
+.informacion{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    color:#F2F2F2;
+    margin: 25px;
+
+}
