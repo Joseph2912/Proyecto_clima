@@ -39,6 +39,32 @@ const setWheatherData = data => {
     });
 
 
+    if (weatherData.description === "Clouds") {
+        let fondo = document.getElementById('clima');
+        fondo.style.backgroundImage = "url('svg/nubes.svg')";
+    }
+    if (weatherData.description === "Rain") {
+        let fondo = document.getElementById('clima');
+        fondo.style.backgroundImage = "url('svg/nubes.svg')";
+    }
+    if (weatherData.description === "Sun") {
+        let fondo = document.getElementById('clima');
+        fondo.style.backgroundImage = "url('svg/sol.svg')";
+    }
+
+    carga();
+}
+
+
+const carga = (weatherData) =>{
+
+    let contenerdor = document.getElementById('contenedor');
+    let spinner = document.getElementById('loader');
+    let fondo = document.getElementById('sol');
+
+    spinner.style.display = "none";
+    contenerdor.style.display = "flex";
+
 }
 
 // esta funcion nos permite acomodar la fecha en getDate

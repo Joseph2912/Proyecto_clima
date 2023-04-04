@@ -3,25 +3,39 @@
     padding: 0;
 }
 
-#contenedor{
+body {
 
+    background-color: #363B59;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+
+}
+
+#contenedor {
+
+    display: none;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100%;
     height: 100dvh;
-    background-color: #363B59;
-}
-
-.contenedor2{
-
-    padding: 50px;
 
 }
 
-.contenedor3{
+.contenedor2#sol{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.contenedor3 {
 
     display: flex;
     flex-direction: row;
@@ -30,7 +44,7 @@
 
 }
 
-#location{
+#location {
 
     font-size: 24px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
@@ -38,7 +52,7 @@
 
 }
 
-#description{
+#description {
 
     font-size: 18px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
@@ -49,7 +63,8 @@
     padding: 10px;
 
 }
-#humidity{
+
+#humidity {
 
     font-size: 18px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
@@ -57,21 +72,23 @@
 
 }
 
-#pressrure{
+#pressrure {
 
     font-size: 18px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
     color: #F2F2F2;
 
 }
-#temperature{
+
+#temperature {
 
     font-size: 54px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
     color: #F2F2F2;
 
 }
-#temperature2{
+
+#temperature2 {
 
     display: flex;
     flex-direction: row;
@@ -83,14 +100,16 @@
 
 
 }
-#date{
+
+#date {
 
     font-size: 18px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
     color: #F2F2F2;
 
 }
-.informacion{
+
+.informacion {
 
     display: flex;
     align-items: center;
@@ -98,7 +117,44 @@
     justify-content: space-between;
     font-size: 18px;
     font-family: "Bebas Neue", "Roboto", sans-serif;
-    color:#F2F2F2;
+    color: #F2F2F2;
     margin: 25px;
 
+}
+
+#clima{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+   /* background-image: url(svg/sol.svg);*/
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 150px;
+
+}
+
+#loader {
+
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
