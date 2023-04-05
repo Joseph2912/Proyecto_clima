@@ -3,6 +3,7 @@
 // Clave de la API que me dan en la pagina openweathermap 
 const API_KEY = "a941f8106af1d1a62bfb404bcf99a662"
 
+
 // En esta función flecha estoy tomado la latitud y longitud para establecer las coordenadas en la API
 const log = Position => {
 
@@ -39,15 +40,15 @@ const setWheatherData = data => {
     });
 
 
-    if (weatherData.description === "Clouds") {
+    if (test === "Clouds") {
         let fondo = document.getElementById('clima');
         fondo.style.backgroundImage = "url('svg/nubes.svg')";
     }
-    if (weatherData.description === "Rain") {
+    if (test === "Rain") {
         let fondo = document.getElementById('clima');
-        fondo.style.backgroundImage = "url('svg/nubes.svg')";
+        fondo.style.backgroundImage = "url('svg/lluvia.svg')";
     }
-    if (weatherData.description === "Sun") {
+    if (test === "Sun") {
         let fondo = document.getElementById('clima');
         fondo.style.backgroundImage = "url('svg/sol.svg')";
     }
