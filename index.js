@@ -4,6 +4,7 @@
 const API_KEY = "a941f8106af1d1a62bfb404bcf99a662"
 
 
+
 // En esta función flecha estoy tomado la latitud y longitud para establecer las coordenadas en la API
 const log = Position => {
 
@@ -40,15 +41,15 @@ const setWheatherData = data => {
     });
 
 
-    if (test === "Clouds") {
+    if (weatherData.description === "Clouds") {
         let fondo = document.getElementById('clima');
         fondo.style.backgroundImage = "url('svg/nubes.svg')";
     }
-    if (test === "Rain") {
+    if (weatherData.description === "Rain") {
         let fondo = document.getElementById('clima');
         fondo.style.backgroundImage = "url('svg/lluvia.svg')";
     }
-    if (test === "Sun") {
+    if (weatherData.description === "Sun") {
         let fondo = document.getElementById('clima');
         fondo.style.backgroundImage = "url('svg/sol.svg')";
     }
